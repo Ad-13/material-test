@@ -40,9 +40,9 @@
 		e.stopPropagation();
 
 		if ( $(this).hasClass('carousel-next') ) {
-			mainSlider.carousel('next');
+			$mainSlider.carousel('next');
 		} else {
-			mainSlider.carousel('prev');
+			$mainSlider.carousel('prev');
 		}
 	});
 

@@ -1,0 +1,54 @@
+/* **************** CARD FOLLOW ****************** */
+.card-follow {
+	background: #fff;
+	border-radius: 0;
+	padding: 22px 10px;
+	text-align: center;
+}
+
+.card-follow__img {
+	height: 147px;
+	margin-bottom: 15px;
+
+	.img {
+		border: 5px solid #fff;
+		border-radius: 50%;
+		display: inline-block;
+		height: 140px;
+		width: 140px;
+	}
+}
+
+.card-follow-img__link {
+	border-radius: 50%;
+	border: 1px solid #00b2b2;
+	display: inline-block;
+}
+
+.card-follow__title {
+	margin-bottom: 7px;
+	max-width: 200px;
+	line-height: 1;
+
+	.card-link {
+		color: #5b5b5b;
+		font-size: 14px;
+	}
+}
+
+.card-follow__nicname {
+	color: #5ab8b7;
+	font-size: 11px;
+	margin-bottom: 20px;
+	max-width: 200px;
+}
+
+.btn.card-follow__btn {
+	color: #a6fcff;
+	text-transform: none;
+
+	.zmdi {
+		font-size: 25px;
+		vertical-align: middle;
+	}
+}

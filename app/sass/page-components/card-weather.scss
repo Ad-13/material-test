@@ -1,0 +1,119 @@
+/* **************** CARD WEATHER ****************** */
+.card.card-weather {
+	background: transparent;
+	max-height: 255px;
+
+	.tabs {
+		background: transparent;
+		height: auto;
+		white-space: normal;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.tab {
+		height: auto;
+		line-height: 1;
+		width: 24.5%;
+	}
+
+	.days-list__item {
+		background: #00b2b2;
+		color: #fff;
+		display: block;
+		font-size: 12px;
+		text-align: center;
+		text-transform: none;
+		transition: all .2s ease-in-out;
+		padding: 13px 5px;
+		&.active,
+		&:hover {
+			background: #029494;
+			text-decoration: none;
+			color: #fff;
+		}
+
+		.img {
+			display: inline-block;
+			font-size: 20px;
+			margin-bottom: 5px;
+		}
+
+		.txt {
+			display: block;
+		}
+	}
+
+	.indicator {
+		display: none !important;
+	}
+}
+
+.card-weather__day {
+	background: #00b2b2;
+	margin-bottom: 2px;
+	padding: 15px;
+}
+
+.day-info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 16px;
+}
+
+.day-info__city {
+	color: #93cee0;
+}
+
+.temp-format__item {
+	color: #0b6678;
+	cursor: pointer;
+	margin-left: 5px;
+	&.active {
+		color: #93cee0;
+
+		.circle {
+			border-color: #93cee0;
+		}
+	}
+}
+
+.circle {
+	border-radius: 50%;
+	border: 1px solid #0b6678;
+	display: inline-block;
+	vertical-align: top;
+	height: 5px;
+	width: 5px;
+}
+
+.day-main {
+	color: #fff;
+	padding: 40px 0;
+	text-align: center;
+}
+
+.day-main__img {
+	display: inline-block;
+	font-size: 62px;
+	margin-right: 35px;
+	vertical-align: middle;
+}
+
+.day-main__temp {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 62px;
+
+	.circle {
+		border-color: #fff;
+		height: 11px;
+		width: 11px;
+	}
+
+	.num {
+		display: none;
+		&.active { display: inline-block; }
+	}
+}

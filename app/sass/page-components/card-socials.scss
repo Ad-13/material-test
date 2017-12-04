@@ -1,0 +1,45 @@
+/* **************** CARD SOCIALS ****************** */
+.card-socials {
+	background: transparent;
+}
+
+.socials-item {
+	background: #00acee;
+	cursor: pointer;
+	display: inline-block;
+	float: left;
+	height: 110px;
+	margin-bottom: 30px;
+	position: relative;
+	transition: all .2s ease-in-out;
+	width: 100px;
+	&:nth-last-child(1),
+	&:nth-last-child(2) {
+		margin-bottom: 0;
+	}
+	&:nth-child(2n) {
+		float: right;
+	}
+	&.dr {
+		background: #ed4a89;
+	}
+	&.gl {
+		background: #d6492e;
+	}
+	&.fb {
+		background: #3b589c;
+	}
+	&:hover {
+		transform: scale(0.9);
+		text-decoration: none;
+	}
+
+	.zmdi {
+		color: #fff;
+		font-size: 63px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}

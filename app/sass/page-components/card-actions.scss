@@ -1,0 +1,66 @@
+/* **************** CARD ACTIONS ****************** */
+.card-actions {
+	border-radius: 0;
+
+	.switch-item {
+		border-bottom: 2px solid #7792af;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 5px 0;
+	}
+
+	.switch-item__txt {
+		color: #626262;
+		display: inline-block;
+		font-size: 14px;
+		padding-left: 20px;
+	}
+
+	.switch {
+		display: inline-block;
+
+		>label {
+			.lever {
+				background-color: #eee;
+				height: 25px;
+				width: 39px;
+				&::before,
+				&::after {
+					margin-left: 1px;
+					top: 2px;
+				}
+			}
+
+			input[type="checkbox"]:checked + .lever {
+				&::before,
+				&::after {
+					margin-left: -1px;
+				}
+			}
+		}
+	}
+}
+
+.range-slider-mono,
+.range-slider-dual {
+	margin: 25px 20px;
+
+	.noUi-tooltip span {
+		top: 8px;
+		left: 0;
+	}
+
+	&.noUi-target.noUi-horizontal .noUi-tooltip {
+		background-color: #fff;
+		border: 2px solid #eee;
+		height: 32px;
+		width: 32px;
+		top: -19px;
+		left: -3px;
+	}
+
+	&.noUi-target.noUi-horizontal .noUi-handle.noUi-active .noUi-tooltip {
+		background-color: #26a69a;
+	}
+}

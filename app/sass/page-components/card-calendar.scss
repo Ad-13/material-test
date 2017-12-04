@@ -1,0 +1,107 @@
+/* **************** CARD CALENDAR ****************** */
+.card.card-calendar {
+	background: transparent;
+	border-radius: 0;
+	min-height: 255px;
+
+	.ui-datepicker {
+		background: #fff;
+		border: 0;
+		font-family: 'Roboto',Arial,sans-serif;
+		padding: 0;
+		width: 100%;
+	}
+
+	.ui-datepicker-header {
+		background: #00b2b2;
+		border: 0;
+		border-radius: 0;
+		padding: 30px 15px;
+	}
+
+	.ui-datepicker-title {
+		color: #bbffff;
+		font-size: 14px;
+		text-transform: none;
+	}
+
+	.ui-datepicker-prev,
+	.ui-datepicker-next {
+		background: transparent;
+		border-radius: 50%;
+		border: 1px solid #bbffff;
+		height: 30px;
+		width: 30px;
+		position: absolute;
+		top: 50%;
+		transform: translate(0, -50%);
+		transition: all .2s ease-in-out;
+		&:focus {
+			background-color: #00bbb3;
+		}
+		&:hover {
+			background-color: #049c96;
+		}
+
+		&::before {
+			content: '';
+			display: inline-block;
+			width: 10px;
+			height: 10px;
+			border-top: 2px solid #bbffff;
+			border-right: 2px solid #bbffff;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-66%, -50%) rotate(45deg);
+		}
+
+		> span { display: none; }
+	}
+
+	.ui-datepicker-prev {
+		left: 15px;
+		transform: translate(0, -50%) rotate(180deg);
+	}
+
+	.ui-datepicker-next {
+		right: 15px;
+	}
+
+	.ui-datepicker-calendar {
+		border: 1px solid #bbdfeb;
+		margin: 0;
+	}
+
+	th {
+		color: #4bb9ae;
+		font-size: 14px;
+		padding: 15px 6px;
+		text-align: center;
+	}
+
+	td {
+		padding: 7px 6px;
+		text-align: center;
+	}
+
+	.ui-state-default {
+		background: transparent;
+		border-radius: 50%;
+		border: 1px solid transparent;
+		color: #717171;
+		font-size: 13px;
+		display: inline-block;
+		text-align: center;
+		transition: all .2s ease-in-out;
+		line-height: 22px;
+		height: 28px;
+		width: 28px;
+		&.ui-state-highlight {
+			border-color: #717171;
+		}
+		&.ui-state-active {
+			background: #eee;
+		}
+	}
+}

@@ -1,0 +1,86 @@
+/* **************** CARD NAV ****************** */
+.card-nav {
+	border-radius: 0;
+	.nav {
+		float: left;
+		width: 66%;
+	}
+
+	.search {
+		float: right;
+		padding: 18px 15px 0 0;
+		width: 34%;
+	}
+
+	.side-nav li > a:hover {
+		text-decoration: none;
+	}
+}
+
+.deskt-menu {
+	> li {
+		height: 76px;
+		float: left;
+		border-right: 1px solid #d5d5d5;
+	}
+}
+
+.deskt-menu__item {
+	background: transparent;
+	color: #414141;
+	display: inline-flex;
+	align-items: center;
+	height: 100%;
+	line-height: 1;
+	padding: 0 25px;
+	transition: all .2s ease-in-out;
+	&:hover {
+		background: #eee;
+		text-decoration: none;
+	}
+
+	.zmdi {
+		font-size: 29px;
+	}
+}
+
+.nav__mobile-btn.btn {
+	color: #fff;
+	display: inline-block;
+	font-size: 14px;
+	height: auto;
+	line-height: 1;
+	padding: 15px;
+	margin: 18px 0 0 15px;
+}
+
+.search {
+	.search-btn {
+		border-radius: 0;
+		box-shadow: none;
+		position: absolute;
+		top: 0;
+		right: 0;
+		padding: 0;
+		line-height: 40px;
+		height: 40px;
+		width: 40px;
+	}
+
+	.search-input {
+		padding-right: 45px !important;
+	}
+}
+
+/* **************** MEDIA ****************** */
+@media only screen and (max-width : 992px) {
+	.card-nav {
+		.search {
+			width: 60%;
+		}
+
+		.nav {
+			width: auto;
+		}
+	}
+}

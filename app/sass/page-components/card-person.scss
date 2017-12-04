@@ -1,0 +1,65 @@
+/* **************** CARD PERSON ****************** */
+.card.card-person {
+	.card-content {
+		height: 56px;
+		padding: 10px;
+
+		.card-title {
+			color: #696969;
+			font-size: 14px;
+			line-height: 1;
+			overflow: hidden;
+			text-overflow: ellipsis; 
+			white-space: nowrap;
+		}
+
+		.card-link {
+			color: #696969;
+		}
+
+		.card-posted {
+			color: #03b1bc;
+			font-size: 12px;
+			overflow: hidden;
+			text-overflow: ellipsis; 
+			white-space: nowrap;
+		}
+	}
+
+	.card-action {
+		border-top: 0;
+		display: flex;
+		justify-content: space-between;
+		padding: 0;
+	}
+
+	.person-action {
+		background: #00b7a9;
+		border-right: 1px solid #00b7a9;
+		border-radius: 0;
+		padding: 0;
+		height: 34px;
+		line-height: 34px;
+		width: 33.33%;
+		&:last-child {
+			border-right: 0;
+		}
+		&:focus {
+			background-color: #00b7a9;
+		}
+		&:hover {
+			background-color: #049c96;
+		}
+
+		> * {
+			display: inline-block;
+		font-size: 12px;
+			vertical-align: middle;
+		}
+	}
+}
+
+.card-img {
+	max-height: 160px;
+	overflow: hidden;
+}

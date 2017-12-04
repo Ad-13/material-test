@@ -1,0 +1,53 @@
+/* **************** CARD MESSAGES ****************** */
+.card-messages.grid-item {
+	border-radius: 0;
+	margin-right: 25px;
+	padding: 20px;
+}
+
+.messages-list {
+	&__item {
+		margin-bottom: 20px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.messages-list__item {
+	background: transparent;
+	border-left: 3px solid transparent;
+	position: relative;
+	font-size: 12px;
+	padding: 12px 32px 12px 9px;
+	&.success {
+		background: #def0d8;
+		border-color: #d5e5cb;
+		color: #92af7f;
+	}
+	&.attention {
+		background: #d9edf6;
+		border-color: #b0e8e5;
+		color: #5b9ea4;
+	}
+	&.warning {
+		background: #fbfade;
+		border-color: #f9efd4;
+		color: #e0c38b;
+	}
+	&.err {
+		background: #f2dedf;
+		border-color: #e8d6d6;
+		color: #b59097;
+	}
+
+	.zmdi {
+		font-size: 25px;
+		position: absolute;
+		top: 50%;
+		right: 9px;
+		transform: translate(0, -50%);
+		z-index: 2;
+	}
+}
+

@@ -1,0 +1,53 @@
+/* **************** CARD FORM ****************** */
+.card-form {
+	border-radius: 0;
+	padding: 20px 20px 0;
+}
+
+.reg-form {
+
+	.row {
+		margin-bottom: 0;
+	}
+
+	.textarea {
+		display: block;
+		font-family: 'Roboto',Arial,sans-serif;
+		height: auto;
+		min-height: 80px;
+		resize: vertical;
+	}
+
+	.sbmt-btn {
+		border-radius: 0;
+		color: #77deef;
+		text-transform: none;
+		position: absolute;
+		bottom: 0;
+		right: .75rem;
+	}
+
+}
+
+.input-field {
+	input.input {
+		&:focus {
+			background: #fff;
+		}
+	}
+	input.error {
+		background: #f2dedf;
+		border-color: #c99ea5;
+		&:focus {
+			background: #fff;
+		}
+
+		& ~ .input-label {
+			display: none;
+		}
+	}
+
+	label.error {
+		padding-left: 15px;
+	}
+}

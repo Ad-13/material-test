@@ -1,0 +1,62 @@
+/* **************** COMMON ****************** */
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: block;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+body {
+	background: #303030;
+	color: #000;
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+main {
+	flex: 1 0 auto;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+.img {
+	max-width: 100%;
+	height: auto;
+}
+
+.offscreen {
+	position:absolute;
+	left:-1000px;
+	top:-1000px;
+	width:1px;
+	height:1px;
+	text-align: left;
+	overflow:hidden;
+	&:focus,
+	&:active,
+	&:hover {
+		position:absolute;
+		left:0;
+		top:0;
+		width:auto;
+		height:auto;
+		overflow:visible;
+		background-color:#FF3;
+		border: 1px dotted #000;
+	}
+}
+
+.page-main {
+	background: linear-gradient(45deg, #0f5a56 0%,#053973 100%);
+}
+
+.section-cards {
+	padding: 3rem 0;
+}

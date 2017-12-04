@@ -1,0 +1,95 @@
+/* **************** CARD ACCORDION ****************** */
+.card-accordion {
+	background: transparent;
+	min-height: 278px;
+	position: relative;
+	z-index: 5;
+
+	.collapsible {
+		border: 0;
+		margin: 0;
+	}
+
+	.collapsible-header {
+		background: #00b2b2;
+		border-bottom-color: #00808b;
+		color: #bcffff;
+		padding: 10px 20px;
+		padding-right: 56px;
+		position: relative;
+		transition: all .2s ease-in-out;
+		&:hover {
+			background: #01a9a9;
+		}
+		&.active {
+			background: #019a9a;
+		}
+
+		.badge-item {
+			border-color: #bcffff;
+			color: #bcffff;
+			right: 30px;
+
+			&::after {
+				content: '';
+				display: inline-block;
+				border: 5px solid transparent;
+				border-top: 5px solid #bcffff;
+				position: absolute;
+				right: -20px;
+				top: 66%;
+				transform: translate(0, -50%);
+				transition: all .2s ease-in-out;
+			}
+		}
+
+		&.active {
+			.badge-item::after {
+				top: 50%;
+				transform: translate(0, -50%) rotate(180deg);
+			}
+		}
+	}
+
+	.collapsible-body {
+		padding: 0;
+	}
+
+	.collection-item {
+		border-top: 1px solid #6b859e;
+		padding: 0;
+		position: relative;
+		&:first-child {
+			border-top: 0;
+		}
+	}
+
+	.collection-item__link {
+		background: #fff;
+		color: #6a6a6a;
+		display: block;
+		padding: 15px 35px 15px 20px;
+		transition: all .2s ease-in-out;
+		&:hover {
+			background: #eee;
+			text-decoration: none;
+		}
+	}
+
+	.badge-item {
+		background: transparent;
+		border-radius: 50%;
+		border: 1px solid #6a6a6a;
+		color: #6a6a6a;
+		display: inline-block;
+		font-size: 12px;
+		position: absolute;
+		right: 10px;
+		top: 50%;
+		transform: translate(0, -50%);
+		text-align: center;
+		line-height: 23px;
+		height: 24px;
+		width: 24px;
+	}
+}

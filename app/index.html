@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>test doit Krupin</title>
+	<meta name="description" content="some text" />
+
+	<!-- bower:css -->
+	<!-- endbower -->
+
+	<!-- build:css css/vendor.min.css -->
+	<link rel="stylesheet" href="css/materialize.css" />
+	<link rel="stylesheet" href="css/nouislider.css">
+	<link rel="stylesheet" href="css/weather-icons.css">
+	<link rel="stylesheet" href="css/jquery-ui.min.css">
+	<!-- endbuild -->
+	<!-- build:css css/custom.css -->
+	<link rel="stylesheet" href="css/main.css">
+	<!-- endbuild -->
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+</head>
+
+<body>
+	<!-- it is for WCAG 2.0 compatability -->
+	<a href="#content" class="offscreen">Skip to Content</a>
+
+<!-- HEADER -->
+	<header class="page-header">
+		<div class="container">
+			<a href="#" class="brand-logo">Logo</a>
+			<ul class="header-navbar">
+				<li>
+					<a href="#" class="header-navbar__link">Navbar Link</a>
+				</li>
+			</ul>
+		</div>
+	</header>
+<!-- END HEADER -->
+
+<!-- PAGE CONTENT -->
+	<main class="page-main" id="content">
+		<section class="section-cards">
+			<div class="container grid">
+				<article class="grid-item grid-item--width5 card card-slider hoverable">
+					<div class="carousel carousel-slider main-slider" id="main-slider">
+						<div class="carousel-track">
+							<div class="carousel-item">
+								<div class="carousel-item__img">
+									<img src="img/main-sl-1.jpg" alt="slide img" class="img">
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="carousel-item__img">
+									<img src="img/main-sl-1.jpg" alt="slide img" class="img">
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="carousel-item__img">
+									<img src="img/main-sl-1.jpg" alt="slide img" class="img">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-arrs" id="main-slider-arrs">
+						<button class="carousel-arr waves-effect carousel-prev btn"><span class="arr-img"></span></button>
+						<button class="carousel-arr waves-effect carousel-next btn"><span class="arr-img"></span></button>
+					</div>
+				</article>
+				<article class="grid-item grid-item--width2 card-socials clearfix">
+					<a href="#" class="socials-item waves-effect tw" title="twitter">
+						<i class="zmdi zmdi-twitter"></i>&nbsp;
+					</a>
+					<a href="#" class="socials-item waves-effect dr" title="dribbble">
+						<i class="zmdi zmdi-dribbble"></i>&nbsp;
+					</a>
+					<a href="#" class="socials-item waves-effect gl" title="google">
+						<i class="zmdi zmdi-google-old"></i>&nbsp;
+					</a>
+					<a href="#" class="socials-item waves-effect fb" title="facebook">
+						<i class="zmdi zmdi-facebook"></i>&nbsp;
+					</a>
+				</article>
+				<article class="grid-item card card-person hoverable">
+					<div class="card-img">
+						<a href="#"><img class="img" src="img/person-1.jpg" alt="person image"></a>
+					</div>
+					<div class="card-content">
+						<p class="card-title"><a href="#" class="card-link">Tony Stark is Iron Man</a></p>
+						<p class="card-posted">Posted on <time datetime="2013-08-30">30th August 2013</time></p>
+					</div>
+					<div class="card-action">
+						<button class="btn person-action waves-effect">
+							<i class="zmdi zmdi-eye"></i>
+							<span class="person-action-txt">256</span>
+						</button>
+						<button class="btn person-action waves-effect">
+							<i class="zmdi zmdi-comment-outline"></i>
+							<span class="person-action-txt">12</span>
+						</button>
+						<button class="btn person-action waves-effect">
+							<i class="zmdi zmdi-favorite-outline"></i>
+							<span class="person-action-txt">83</span>
+						</button>
+					</div>
+				</article>
+				<article class="grid-item grid-item--width6 card card-nav hoverable clearfix">
+					<nav class="nav">
+						<button data-activates="mobile-menu" class="btn nav__mobile-btn button-collapse">menu</button>
+						<ul class="deskt-menu  clearfix hide-on-med-and-down">
+							<li><a href="#" class="deskt-menu__item"><i class="zmdi zmdi-home"></i>&nbsp;</a></li>
+							<li><a href="#" class="deskt-menu__item">About</a></li>
+							<li><a href="#" class="deskt-menu__item">Services</a></li>
+							<li><a href="#" class="deskt-menu__item">Portfolio</a></li>
+							<li><a href="#" class="deskt-menu__item">Blog</a></li>
+							<li><a href="#" class="deskt-menu__item">Contact</a></li>
+						</ul>
+						<ul class="side-nav" id="mobile-menu">
+							<li><a href="#"><i class="zmdi zmdi-home"></i>&nbsp;</a></li>
+							<li><a href="#">About</a></li>
+							<li><a href="#">Services</a></li>
+							<li><a href="#">Portfolio</a></li>
+							<li><a href="#">Blog</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+					</nav>
+					<form action="#" class="search" id="search">
+						<div class="input-field">
+							<input class="input search-input" title="search" type="text">
+							<span class="input-label">Search</span>
+							<button type="submit" class="btn search-btn waves-effect"><i class="zmdi zmdi-search"></i></button>
+						</div>
+					</form>
+				</article>
+				<article class="grid-item card-accordion">
+					<ul class="collapsible card hoverable" data-collapsible="accordion">
+						<li>
+							<div class="collapsible-header waves-effect active">Web Design<span class="badge-item">12</span></div>
+							<div class="collapsible-body">
+								<ul class="collection">
+									<li class="collection-item"><a href="#" class="collection-item__link">Ecommerce<span class="badge-item">3</span></a></li>
+									<li class="collection-item"><a href="#" class="collection-item__link">Blogs<span class="new badge-item">3</span></a></li>
+									<li class="collection-item"><a href="#" class="collection-item__link">Portfoilio<span class="new badge-item">3</span></a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<div class="collapsible-header waves-effect">Print Design<span class="badge-item">16</span></div>
+							<div class="collapsible-body">
+								<ul class="collection">
+									<li class="collection-item"><a href="#" class="collection-item__link">Ecommerce<span class="badge-item">3</span></a></li>
+									<li class="collection-item"><a href="#" class="collection-item__link">Blogs<span class="new badge-item">3</span></a></li>
+									<li class="collection-item"><a href="#" class="collection-item__link">Portfoilio<span class="new badge-item">3</span></a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<div class="collapsible-header waves-effect">Photography<span class="badge-item">52</span></div>
+							<div class="collapsible-body">
+								<ul class="collection">
+									<li class="collection-item"><a href="#" class="collection-item__link">Ecommerce<span class="badge-item">3</span></a></li>
+									<li class="collection-item"><a href="#" class="collection-item__link">Blogs<span class="new badge-item">3</span></a></li>
+									<li class="collection-item"><a href="#" class="collection-item__link">Portfoilio<span class="new badge-item">3</span></a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</article>
+				<article class="grid-item grid-item--width2 dubl-card">
+					<div class="card card-follow hoverable">
+						<div class="card-follow__img">
+							<a href="#" class="card-follow-img__link hoverable"><img class="img" src="img/person-2.jpg" alt="person image"></a>
+						</div>
+						<div class="card-follow__content">
+							<p class="card-follow__title"><a href="#" class="card-link">Scarlett Johanson</a></p>
+							<p class="card-follow__nicname">Black Widow</p>
+						</div>
+						<div class="card-follow__action">
+							<button class="btn card-follow__btn waves-effect">Follow <i class="zmdi zmdi-plus-circle-o"></i></button>
+						</div>
+					</div>
+					<div class="card-dropdown">
+						<div class="dropdown-wrapper">
+							<button class="dropdown-button btn" data-beloworigin="true" data-activates="dropdown1">Dropdown Normal <span class="badge-item"></span></button>
+							<ul id="dropdown1" class="dropdown-content">
+								<li><a href="#" class="dropdown-content__item">one</a></li>
+								<li><a href="#" class="dropdown-content__item">two</a></li>
+							</ul>
+						</div>
+						<div class="dropdown-wrapper">
+							<button class="dropdown-button btn active" data-beloworigin="true" data-activates="dropdown2">Dropdown Active <span class="badge-item"></span></button>
+							<ul id="dropdown2" class="dropdown-content active">
+								<li><a href="#" class="dropdown-content__item">one</a></li>
+								<li><a href="#" class="dropdown-content__item">two</a></li>
+							</ul>
+						</div>
+					</div>
+				</article>
+				<article class="grid-item grid-item--width3 card card-weather hoverable" id="card-weather">
+					<div id="monday" class="card-weather__day">
+						<div class="day-info">
+							<div class="day-info__city">Exeter, UK</div>
+							<div class="day-info__temp-format">
+								<span class="temp-format__item fahrenheit"><sup class="circle"></sup>F</span>
+								<span class="temp-format__item cesium active"><sup class="circle"></sup>C</span>
+							</div>
+						</div>
+						<div class="day-main">
+							<div class="day-main__img"><i class="wi wi-day-sunny"></i></div>
+							<div class="day-main__temp">
+								<span class="num cesium active">21</span><span class="num fahrenheit">105</span><sup class="circle"></sup>
+							</div>
+						</div>
+					</div>
+					<div id="tuesday" class="card-weather__day">
+						<div class="day-info">
+							<div class="day-info__city">Exeter, UK</div>
+							<div class="day-info__temp-format">
+								<span class="temp-format__item fahrenheit"><sup class="circle"></sup>F</span>
+								<span class="temp-format__item cesium active"><sup class="circle"></sup>C</span>
+							</div>
+						</div>
+						<div class="day-main">
+							<div class="day-main__img"><i class="wi wi-cloud"></i></div>
+							<div class="day-main__temp">
+								<span class="num cesium active">8</span><span class="num fahrenheit">40</span><sup class="circle"></sup>
+							</div>
+						</div>
+					</div>
+					<div id="wednesday" class="card-weather__day">
+						<div class="day-info">
+							<div class="day-info__city">Exeter, UK</div>
+							<div class="day-info__temp-format">
+								<span class="temp-format__item fahrenheit"><sup class="circle"></sup>F</span>
+								<span class="temp-format__item cesium active"><sup class="circle"></sup>C</span>
+							</div>
+						</div>
+						<div class="day-main">
+							<div class="day-main__img"><i class="wi wi-day-sprinkle"></i></div>
+							<div class="day-main__temp">
+								<span class="num cesium active">23</span><span class="num fahrenheit">110</span><sup class="circle"></sup>
+							</div>
+						</div>
+					</div>
+					<div id="thursday" class="card-weather__day">
+						<div class="day-info">
+							<div class="day-info__city">Exeter, UK</div>
+							<div class="day-info__temp-format">
+								<span class="temp-format__item fahrenheit"><sup class="circle"></sup>F</span>
+								<span class="temp-format__item cesium active"><sup class="circle"></sup>C</span>
+							</div>
+						</div>
+						<div class="day-main">
+							<div class="day-main__img"><i class="wi wi-cloud"></i></div>
+							<div class="day-main__temp">
+								<span class="num cesium active">13</span><span class="num fahrenheit">80</span><sup class="circle"></sup>
+							</div>
+						</div>
+					</div>
+					<ul id="tabs-weather" class="tabs days-list">
+						<li class="tab">
+							<a href="#monday" class="days-list__item waves-effect">
+								<span class="img"><i class="wi wi-day-sunny"></i></span>
+								<span class="txt">Monday</span>
+							</a>
+						</li>
+						<li class="tab">
+							<a href="#tuesday" class="days-list__item waves-effect">
+								<span class="img"><i class="wi wi-cloud"></i></span>
+								<span class="txt">Tuesday</span>
+							</a>
+						</li>
+						<li class="tab">
+							<a href="#wednesday" class="days-list__item waves-effect">
+								<span class="img"><i class="wi wi-day-sprinkle"></i></span>
+								<span class="txt">Wednesday</span>
+							</a>
+						</li>
+						<li class="tab">
+							<a href="#thursday" class="days-list__item waves-effect">
+								<span class="img"><i class="wi wi-cloud"></i></span>
+								<span class="txt">Thursday</span>
+							</a>
+						</li>
+					</ul>
+				</article>
+				<article class="grid-item grid-item--width3 card card-calendar hoverable">
+					<div id="datepicker"></div>
+				</article>
+				<article class="grid-item card card-actions hoverable">
+					<div class="switch-item">
+						<div class="switch-item__txt">Switch ON</div>
+						<div class="switch">
+							<label>
+								<input type="checkbox" checked>
+								<span class="lever"></span>&nbsp;
+							</label>
+						</div>
+					</div>
+					<div class="switch-item">
+						<div class="switch-item__txt">Switch OFF</div>
+						<div class="switch">
+							<label>
+								<input type="checkbox">
+								<span class="lever"></span>&nbsp;
+							</label>
+						</div>
+					</div>
+					<div class="range-slider-mono" id="range-slider-mono"></div>
+					<div class="range-slider-dual" id="range-slider-dual"></div>
+				</article>
+				<article class="grid-item grid-item--width3 card card-messages hoverable">
+					<div class="messages-list">
+						<p class="messages-list__item success">Congratulations! You have been successful <i class="zmdi zmdi-close-circle-o"></i></p>
+						<p class="messages-list__item attention">Attention! I recommend you look at me <i class="zmdi zmdi-close-circle-o"></i></p>
+						<p class="messages-list__item warning">Warning! Are you sure you to do this? <i class="zmdi zmdi-close-circle-o"></i></p>
+						<p class="messages-list__item err">Oops! Something goes wrong <i class="zmdi zmdi-close-circle-o"></i></p>
+					</div>
+				</article>
+				<article class="grid-item grid-item--width4 card card-form hoverable">
+					<form action="#" method="POST" class="reg-form"  id="reg-form">
+						<div class="row">
+							<div class="input-field col s12 m6">
+								<input class="input" title="username" name="username" type="text">
+								<span class="input-label">Username</span>
+							</div>
+							<div class="input-field col s12 m6">
+								<input class="input" title="password" name="password" type="password">
+								<span class="input-label">Password</span>
+							</div>
+						</div>
+						<div class="row">
+							<div class="input-field col s12 m8">
+								<input class="input" title="email" name="email" type="text">
+								<span class="input-label">Email</span>
+							</div>
+							<div class="input-field col s12 m4">
+								<input class="input" title="promo" name="promo" type="text">
+								<span class="input-label">Promo-code</span>
+							</div>
+						</div>
+						<div class="row">
+							<div class="input-field col s12">
+								<textarea name="message" title="message" class="textarea" cols="1" rows="1"></textarea>
+								<span class="input-label">Message</span>
+								<button type="submit" class="btn sbmt-btn waves-effect">Login</button>
+							</div>
+						</div>
+					</form>
+				</article>
+			</div>
+		</section>
+	</main>
+<!-- END PAGE CONTENT -->
+
+
+<!-- FOOTER -->
+	<footer class="page-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col l6 s12">
+					<p class="footer-title">Footer Content</p>
+					<p class="grey-text text-lighten-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, cum.</p>
+				</div>
+				<div class="col l4 offset-l2 s12">
+					<p class="footer-title">Links</p>
+					<ul>
+						<li><a class="grey-text text-lighten-3" href="#">Link 1</a></li>
+						<li><a class="grey-text text-lighten-3" href="#">Link 2</a></li>
+						<li><a class="grey-text text-lighten-3" href="#">Link 3</a></li>
+						<li><a class="grey-text text-lighten-3" href="#">Link 4</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="container">
+				© 2017 Andrew Krupin
+				<a class="grey-text text-lighten-4 right" href="#">More Links</a>
+			</div>
+		</div>
+	</footer>
+<!-- END FOOTER -->
+
+<!-- SCRIPTS -->
+
+	<!-- build:js js/vendor.js -->
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/materialize.js"></script>
+	<script src="js/masonry.pkgd.min.js"></script>
+	<script src="js/nouislider.min.js"></script>
+	<script src="bower_components/jquery-validation/dist/jquery.validate.js"></script>
+	<!-- endbuild -->
+
+	<!-- build:js js/custom.js -->
+	<script src="js/custom.js"></script>
+	<!-- endbuild -->
+<!-- END SCRIPTS -->
+
+	<!-- bower:js -->
+	<!-- endbower -->
+</body>
+
+</html>

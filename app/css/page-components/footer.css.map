@@ -1,0 +1,1 @@
+{"version":3,"sources":["footer.css"],"names":[],"mappings":"AACA,cACE,gBAAiB,AACjB,WAAa,CAAE","file":"footer.css","sourcesContent":["/* **************** FOOTER ****************** */\n.footer-title {\n  font-weight: 400;\n  margin: 10px; }\n"]}
